@@ -1,4 +1,4 @@
-//Given an array of scores, return true if there are scores of 100 next to each other in the array. The array length will be at least 2.
+﻿//Given an array of scores, return true if there are scores of 100 next to each other in the array. The array length will be at least 2.
 
 //scores100([1, 100, 100]) → true
 //scores100([1, 100, 99, 100]) → false
@@ -6,14 +6,14 @@
 
 public boolean scores100(int[] scores) {
 
-\\ for loop comparing each number and comparing to the next
-\\ if two numbers are a match, it will then check to see
-\\ if the two numbers are both 100
+// for loop comparing each number and comparing to the next
+// if two numbers are a match, it will then check to see
+// if the two numbers are both 100
   for (int i = 0; i < scores.length -1; i++){
     if (scores[i] == scores[i+1] && scores[i] == 100){
       return true;
     }
-\\ if both numbers are not a match or not 100, will return false
+// if both numbers are not a match or not 100, will return false
   }
   return false;
 }
